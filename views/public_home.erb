@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<title>Podcasts, yo</title>
+	<style>
+	table, th, td {
+    border: 1px solid black;
+}
+	td {
+		vertical-align:top;
+		max-width:700px;
+}
+	</style>
+	</head>
+	<body>
+	<center>
+	<h1>Episode List</h1>
+	<table>
+	<tr><th>Date</th><th>Episode Name</th><th>Description</th><th>Download Link</th></tr>
+	<% @data.each_value do |ep| %>
+	<tr><td><%= ep[:date] %></td>
+	<td><%= ep[:name] %></td>
+	<td><%= ep[:desc] %></td>
+	<td><a href="<%= ep[:filename] %>" target="_blank">Download Link</a>
+	</tr>
+	<% end %>
+	</table>
+</center>
+</body>
+</html>

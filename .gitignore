@@ -1,0 +1,5 @@
+episodes.yml
+public/*
+log/*
+tmp/sockets/*
+tmp/pids/*
