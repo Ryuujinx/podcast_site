@@ -3,3 +3,4 @@ public/*
 log/*
 tmp/sockets/*
 tmp/pids/*
+include/secret.rb
